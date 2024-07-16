@@ -9,12 +9,12 @@ terraform {
 
 # Configure the AWS provider
 provider "aws" {
-  region = "ap-southeast-2a"
+  region = "ap-southeast-2"  # Ensure this matches your desired region
 }
 
 # Create an EC2 instance
 resource "aws_instance" "New-Server" {
-  ami               = "ami-03f0544597f43a91d"  # Ubuntu AMI ID ap-southeast-2a
+  ami               = "ami-03f0544597f43a91d"  # Ubuntu AMI ID for ap-southeast-2
   instance_type     = "t2.medium"
   availability_zone = "ap-southeast-2a"
   key_name          = "project"  # Replace with your actual key pair name
