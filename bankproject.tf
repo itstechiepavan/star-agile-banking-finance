@@ -121,7 +121,7 @@ resource "aws_eip" "proj-eip" {
 
 # Creating an ubuntu EC2 instance
 resource "aws_instance" "Prod-Server" {
-  ami             = "ami-0ef82eeba2c7a0eeb"
+  ami             = "ami-03f0544597f43a91d"
   instance_type   = "t2.medium"
   availability_zone = "ap-southeast-2a"
   key_name        = "project"
